@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиццерия - Вкуснейшие пиццы в городе</title>
+    <!-- файлы CSS стилей -->
+    <!--<link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/mobile-menu.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- подключённые шрифты с Google Fons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <i class="fas fa-pizza-slice header__logo-icon"></i>
+                PizzaShop
+            </a>
+            
+            <nav class="header__nav">
+                <a href="#" class="header__nav-link">Главная</a>
+                <a href="#" class="header__nav-link">Меню</a>
+                <a href="#" class="header__nav-link">Акции</a>
+                <a href="#" class="header__nav-link">Контакты</a>
+            </nav>
+            
+            <div class="header__buttons">
+                <a href="#" class="header__button header__button--login" id="loginButton">Войти</a>
+                <a href="#" class="header__button header__button--cart" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    Корзина
+                    <span class="header__cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="header__menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="menuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="mobile-menu__nav">
+            <a href="#" class="mobile-menu__link">Главная</a>
+            <a href="#" class="mobile-menu__link">Меню</a>
+            <a href="#" class="mobile-menu__link">Акции</a>
+            <a href="#" class="mobile-menu__link">Контакты</a>
+        </nav>
+        <div class="mobile-menu__buttons">
+            <a href="#" class="header__button header__button--login" id="mobileLoginButton">Войти</a>
+            <a href="#" class="header__button header__button--cart" id="mobileCartButton">
+                <i class="fas fa-shopping-cart"></i>
+                Корзина
+                <span class="header__cart-count">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Вкуснейшие пиццы <span>в вашем городе</span></h1>
+                <p class="hero__description">Закажите самую вкусную пиццу не выходя из дома. Быстрая доставка, свежие ингредиенты и неповторимый вкус.</p>
+                <a href="#products" class="hero__button">Заказать сейчас</a>
+            </div>
+            <div class="hero__image">
+                <div class="hero__image-placeholder">
+                    
+                    <img src="img /shourav-sheikh-xLfqx4Psf94-unsplash 1.png" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            <div class="filters">
+  <button class="filter-btn active" data-filter="all">
+    <i class="fas fa-pizza-slice"></i>
+    <span>Show All</span>
+  </button>
+  <button class="filter-btn" data-filter="meat">
+    <i class="fas fa-drumstick-bite"></i>
+    <span>Meat</span>
+  </button>
+  <button class="filter-btn" data-filter="vegetarian">
+    <i class="fas fa-leaf"></i>
+    <span>Vegetarian</span>
+  </button>
+  <button class="filter-btn" data-filter="sea">
+    <i class="fas fa-fish"></i>
+    <span>Sea products</span>
+  </button>
+  <button class="filter-btn" data-filter="mushroom">
+    <i class="fas fa-feather-alt"></i>
+    <span>Mushroom</span>
+  </button>
+</div>
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>Пепперони 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Пепперони</h3>
+                        <p class="product-card__description">Пицца с колбасками пепперони, моцареллой и томатным соусом</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">549 ₽</div>
+                            <button class="product-card__button" data-id="1" data-name="Пепперони" data-price="549">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>Маргарита 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Маргарита</h3>
+                        <p class="product-card__description">Классическая пицца с томатным соусом, моцареллой и базиликом</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">499 ₽</div>
+                            <button class="product-card__button" data-id="2" data-name="Маргарита" data-price="499">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>Гавайская 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Гавайская</h3>
+                        <p class="product-card__description">Пицца с курицей, ананасами, моцареллой и томатным соусом</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">579 ₽</div>
+                            <button class="product-card__button" data-id="3" data-name="Гавайская" data-price="579">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>4 Сыра 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">4 Сыра</h3>
+                        <p class="product-card__description">Пицца с моцареллой, горгонзолой, пармезаном и чеддером</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">599 ₽</div>
+                            <button class="product-card__button" data-id="4" data-name="4 Сыра" data-price="599">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>Мясная 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Мясная</h3>
+                        <p class="product-card__description">Пицца с колбасой, ветчиной, беконом, пепперони и моцареллой</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">629 ₽</div>
+                            <button class="product-card__button" data-id="5" data-name="Мясная" data-price="629">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <div>Вегетарианская 30см</div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Вегетарианская</h3>
+                        <p class="product-card__description">Пицца с болгарским перцем, помидорами, маслинами, луком и моцареллой</p>
+                        <div class="product-card__footer">
+                            <div class="product-card__price">549 ₽</div>
+                            <button class="product-card__button" data-id="6" data-name="Вегетарианская" data-price="549">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal__title">Ваша корзина</h2>
+            <div class="cart__items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+                <div class="cart__empty">Корзина пуста</div>
+            </div>
+            <div class="cart__total">
+                <span>Итого:</span>
+                <span id="cartTotal">0 ₽</span>
+            </div>
+            <button class="cart__checkout">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeAuth">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="auth__tabs">
+                <div class="auth__tab auth__tab--active" data-tab="login">Вход</div>
+                <div class="auth__tab" data-tab="register">Регистрация</div>
+            </div>
+            
+            <form class="auth__form auth__form--active" id="loginForm">
+                <div class="auth__input-group">
+                    <label class="auth__label">Email</label>
+                    <input type="email" class="auth__input" placeholder="Введите ваш email" required>
+                </div>
+                <div class="auth__input-group">
+                    <label class="auth__label">Пароль</label>
+                    <input type="password" class="auth__input" placeholder="Введите ваш пароль" required>
+                </div>
+                <button type="submit" class="auth__submit">Войти</button>
+            </form>
+            
+            <form class="auth__form" id="registerForm">
+                <div class="auth__input-group">
+                    <label class="auth__label">Имя</label>
+                    <input type="text" class="auth__input" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="auth__input-group">
+                    <label class="auth__label">Email</label>
+                    <input type="email" class="auth__input" placeholder="Введите ваш email" required>
+                </div>
+                <div class="auth__input-group">
+                    <label class="auth__label">Пароль</label>
+                    <input type="password" class="auth__input" placeholder="Придумайте пароль" required>
+                </div>
+                <div class="auth__input-group">
+                    <label class="auth__label">Подтверждение пароля</label>
+                    <input type="password" class="auth__input" placeholder="Повторите пароль" required>
+                </div>
+                <button type="submit" class="auth__submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        Пиццерия
+                    </a>
+                    <p class="footer__description">Доставка самой вкусной пиццы в вашем городе. Готовим с любовью с 2010 года.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__links-column">
+                    <h3 class="footer__title">Меню</h3>
+                    <ul class="footer__links">
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Пиццы</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Комбо</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Закуски</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Напитки</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links-column">
+                    <h3 class="footer__title">Информация</h3>
+                    <ul class="footer__links">
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">О нас</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Акции</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Контакты</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="#" class="footer__links-link">Доставка и оплата</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links-column">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__links">
+                        <li class="footer__links-item">
+                            <a href="tel:+78005553535" class="footer__links-link">+7 (800) 555-35-35</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <a href="mailto:info@pizzeria.ru" class="footer__links-link">info@pizzeria.ru</a>
+                        </li>
+                        <li class="footer__links-item">
+                            <span class="footer__links-link">г. Москва, ул. Пizza, 1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__copyright">
+                <p>&copy; 2023 Пиццерия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

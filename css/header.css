@@ -1,0 +1,103 @@
+/* Header Styles */
+.header {
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow);
+    background: linear-gradient(223.15deg, rgba(29.735246658325195, 12.488805770874023, 0, 1),rgba(30.818008422851562, 7.396315097808838, 0, 1) 31%,rgba(23.360246658325195, 9.949307441711426, 0.2379356324672699, 1) 69%,rgba(29.735246658325195, 12.736329078674316, 0.4267646074295044, 1) 100%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 93, 41, 1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-icon {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.header__nav-link:hover {
+    color: var(--primary);
+}
+
+.header__buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__button {
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.header__button--login {
+    background-color: var(--gray);
+    color: var(--text-primary);
+}
+
+.header__button--login:hover {
+    background-color: #e5e5e5;
+}
+
+.header__button--cart {
+    background-color: var(--primary);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__button--cart:hover {
+    background-color: #e55f00;
+}
+
+.header__cart-count {
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.header__menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+}
