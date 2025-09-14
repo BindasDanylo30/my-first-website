@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/modals.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/mobile-menu.css">
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="conteiner-Wraper">
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
@@ -29,10 +31,10 @@
             </a>
             
             <nav class="header__nav">
-                <a href="#" class="header__nav-link">Главная</a>
-                <a href="#" class="header__nav-link">Меню</a>
-                <a href="#" class="header__nav-link">Акции</a>
-                <a href="#" class="header__nav-link">Контакты</a>
+                <a href="#" class="header__nav-link">Home</a>
+                <a href="#" class="header__nav-link">Menu</a>
+                <a href="#" class="header__nav-link">Promotions</a>
+                <a href="#" class="header__nav-link">Contacts</a>
             </nav>
             
             <div class="header__buttons">
@@ -55,17 +57,17 @@
         <button class="mobile-menu__close" id="menuClose">
             <i class="fas fa-times"></i>
         </button>
-        <nav class="mobile-menu__nav">
-            <a href="#" class="mobile-menu__link">Главная</a>
-            <a href="#" class="mobile-menu__link">Меню</a>
-            <a href="#" class="mobile-menu__link">Акции</a>
-            <a href="#" class="mobile-menu__link">Контакты</a>
+        <nav class="mobile-menu__nav"></nav>
+            <a href="#" class="mobile-menu__link">Home</a>
+            <a href="#" class="mobile-menu__link">Menu</a>
+            <a href="#" class="mobile-menu__link">Promotions</a>
+            <a href="#" class="mobile-menu__link">Contacts</a>
         </nav>
         <div class="mobile-menu__buttons">
             <a href="#" class="header__button header__button--login" id="mobileLoginButton">Войти</a>
             <a href="#" class="header__button header__button--cart" id="mobileCartButton">
                 <i class="fas fa-shopping-cart"></i>
-                Корзина
+                Cart
                 <span class="header__cart-count">0</span>
             </a>
         </div>
@@ -75,15 +77,15 @@
     <section class="hero">
         <div class="container hero__container">
             <div class="hero__content">
-                <h1 class="hero__title">Вкуснейшие пиццы <span>в вашем городе</span></h1>
-                <p class="hero__description">Закажите самую вкусную пиццу не выходя из дома. Быстрая доставка, свежие ингредиенты и неповторимый вкус.</p>
-                <a href="#products" class="hero__button">Заказать сейчас</a>
+                <h1 class="hero__title">The Fastest Pizza<span><img src="/img /Lightning 2.svg" alt=""></span> Delivery</h1>
+                <h4 class = "hero__description">We will deliver juicy pizza for your family in 30 minutes, if the courier is late - <span>pizza is free!</span></h4>
+                <a href="#products" class="hero__button">Order now</a>
             </div>
             <div class="hero__image">
                 <div class="hero__image-placeholder">
                     
-                    <img src="img /shourav-sheikh-xLfqx4Psf94-unsplash 1.png" alt="">
-                    
+                    <img class = "hero__picture" src="/img /shourav-sheikh-xLfqx4Psf94-unsplash 1.png" alt="">
+                    <!--<img class  = "hero__dicore_1" src = '/img /dicor-pizza 1.svg' alt="">-->
                 </div>
             </div>
         </div>
@@ -92,7 +94,7 @@
     <!-- Products Section -->
     <section class="products" id="products">
         <div class="container">
-            <h2 class="section-title">Наше меню</h2>
+            <h2 class="section-title">Our menu</h2>
             <div class="filters">
   <button class="filter-btn active" data-filter="all">
     <i class="fas fa-pizza-slice"></i>
@@ -118,7 +120,7 @@
             <div class="products__grid">
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>Пепперони 30см</div>
+                        <img src="/img /pizza_1.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">Пепперони</h3>
@@ -132,7 +134,7 @@
                 
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>Маргарита 30см</div>
+                        <img src="/img /pizza_2.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">Маргарита</h3>
@@ -146,7 +148,7 @@
                 
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>Гавайская 30см</div>
+                        <img src="/img /pizza_3.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">Гавайская</h3>
@@ -158,9 +160,14 @@
                     </div>
                 </div>
                 
+                <div class="most-popular">
+                    <img src="/img /most-pizza13.png" alt="" >
+                    <div class="text-overlay">MOST POPULAR PIZZA</div>
+                </div>
+                
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>4 Сыра 30см</div>
+                        <img src="/img /pizza_4.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">4 Сыра</h3>
@@ -174,7 +181,7 @@
 
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>Мясная 30см</div>
+                        <img src="/img /pizza-cart5.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">Мясная</h3>
@@ -188,7 +195,7 @@
 
                 <div class="product-card">
                     <div class="product-card__image">
-                        <div>Вегетарианская 30см</div>
+                        <img src="/img /pizza-cart6.svg" alt="">
                     </div>
                     <div class="product-card__content">
                         <h3 class="product-card__title">Вегетарианская</h3>
@@ -199,6 +206,25 @@
                         </div>
                     </div>
                 </div>
+
+                
+               
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container about__container">
+            <div class="about__content">
+                <h2 class="about__title">About us</h2>
+                <p class=" about__text about__text_1">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.
+                </p>
+                <div class="image__about">
+                    <img src="/img /About_as.png" alt="">
+                </div>
+                <p class=" about__text about__text_2">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+            </div>
+            <div class="about__image">
+                <img src="/img /a.png" alt="">
             </div>
         </div>
     </section>
@@ -347,6 +373,7 @@
             </div>
         </div>
     </footer>
+    </div>
 
     <script type="module" src="/js/main.js"></script>
 </body>

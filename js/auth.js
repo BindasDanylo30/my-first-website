@@ -2,8 +2,8 @@
 // DOM Elements
 const authModal = document.getElementById('authModal');
 const authTabs = document.querySelectorAll('.auth__tab');
-const closeAuth = document.getElementById('closeAuth');
 
+const clossButton = document.getElementById('closeAuth');
 // Initialize auth module
 export function initAuth() {
     // Auth tabs functionality
@@ -59,6 +59,14 @@ export function openAuthModal() {
 // Close auth modal
 export function closeAuthModal() {
     if (authModal) {
+        authModal.classList.remove('modal--active');
+    }
+    if (clossButton) {
+        authModal.classList.remove('modal--active');
+    }
+}
+export function closeAuthButton() {
+    if (clossButton) {
         authModal.classList.remove('modal--active');
     }
 }

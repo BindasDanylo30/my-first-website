@@ -1,0 +1,36 @@
+.about__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+  
+
+
+.about__title {
+  font-size: 62px;
+
+  color: var(--text-secondary);
+}
+.about__text {
+  color: rgba(163, 163, 163, 1);
+  font-size: 19.56px;
+
+  font-weight: 400;
+}
+.image__about {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden; /* обрезает лишнее, если нужно */
+  max-width: 567px;
+  max-height: 541px;
+  margin-bottom: 20px;
+}
+.image__about img {
+  width: 100%;
+  /* изображение растягивается под блок */
+  height: auto; /* сохраняет пропорции */
+  display: block; /* убирает лишние пробелы под img */
+  object-fit: cover;
+}

@@ -1,6 +1,6 @@
 // event-listeners.js
 import { addToCart, clearCart } from './cart.js';
-import { openAuthModal, closeAuthModal } from './auth.js';
+import { openAuthModal, closeAuthModal, closeAuthButton } from './auth.js';
 import { closeMobileMenu } from './mobile-menu.js';
 
 // DOM Elements
@@ -11,6 +11,7 @@ const mobileLoginButton = document.getElementById('mobileLoginButton');
 const mobileCartButton = document.getElementById('mobileCartButton');
 const addToCartButtons = document.querySelectorAll('.product-card__button');
 const checkoutButton = document.querySelector('.cart__checkout');
+const clossButton = document.getElementById('clossAuth');
 
 // Set up all event listeners
 export function setupGlobalEventListeners() {
@@ -82,7 +83,12 @@ export function setupGlobalEventListeners() {
         if (e.target === authModal) {
             closeAuthModal();
         }
-    });
+
+        if (e.target === clossButton) {
+            closeAuthButton();
+        } 
+    }
+);
 
     // Checkout button
     if (checkoutButton) {

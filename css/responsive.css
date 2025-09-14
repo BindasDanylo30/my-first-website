@@ -6,8 +6,30 @@
         gap: 0px
     }
     
+    
+    
+        
+    .hero__description {
+        margin: 0 auto;
+        font-size: 25px;
+        align-items: center;
+        
+    }
+
+
     .hero__button {
         margin-bottom: 20px;
+    }
+    
+    .about__container {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+
+    .image__about {
+       margin: 0 auto;
     }
 }
 
@@ -26,6 +48,9 @@
     .hero__title {
         font-size: 36px;
     }
+    .hero__description{
+        max-width: 100%;
+    }
     
     .section-title {
         font-size: 28px;
@@ -39,6 +64,9 @@
     
     .modal__content {
         padding: 20px;
+    }
+    .mobile-menu__link {
+        color:rgb(0, 0, 0)
     }
     
     /* Адаптивность для фильтров */
@@ -58,9 +86,13 @@
     .filter-btn span {
         font-size: 11px;
     }
+    
 }
 
 @media (max-width: 480px) {
+    .container-wraper{
+        margin: 0 auto;
+    }
     .filters {
         gap: 8px;
     }
@@ -77,5 +109,11 @@
     
     .filter-btn span {
         font-size: 10px;
+    }
+}
+@media (min-width: 800px) {
+    .most-popular{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
