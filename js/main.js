@@ -1,8 +1,8 @@
 // main.js
-import { initCart } from '/cart.js';
-import { initAuth } from '/auth.js';
-import { initMobileMenu } from '/mobile-menu.js';
-import { setupGlobalEventListeners } from '/event-listeners.js';
+import { initCart } from './cart.js';
+import { initAuth } from './auth.js';
+import { initMobileMenu } from './mobile-menu.js';
+import { setupGlobalEventListeners } from './event-listeners.js';
 
 // Initialize the application
 function init() {
