@@ -6,20 +6,20 @@ A fully functional Single Page Application (SPA) that simulates the operation of
 ---
 
 ## 🔗 Live Demo (Деплой)
-Посмотреть проект вживую можно здесь: **[https://bindasdanylo30.github.io/my-first-website/]**
+You can see the project live here: **[https://bindasdanylo30.github.io/my-first-website/]**
 
 ---
 
 ## 🛠 Tech Stack (Стек технологий)
 
 **Core:**
-* **HTML5** (Semantic layout) — семантическая верстка.
-* **CSS3** (Flexbox, Grid, Animation) — верстка и адаптив.
-* **JavaScript (ES6+)** — вся логика приложения.
+* **HTML5** (Semantic layout) — semantic layout.
+* **CSS3** (Flexbox, Grid, Animation) — layout and adaptation.
+* **JavaScript (ES6+)** — the entire logic of the application.
 
 **Architecture:**
-* **MVC Pattern** (Model-View-Controller) — разделение логики и отображения.
-* **Component-based approach** — компонентный подход на классах функциях.
+* **MVC Pattern** (Model-View-Controller) — separation of logic and display.
+* **Component-based approach** — component approach in class functions.
 
 **Key Tools:**
 * **VsCode**
@@ -28,14 +28,15 @@ A fully functional Single Page Application (SPA) that simulates the operation of
 
 ## ✨ Features (Ключевой функционал)
 
-* **Responsive Design:** Полная адаптация под мобильные устройства, планшеты и десктопы.
+* **Responsive Design:** Fully adapted for mobile devices, tablets, and desktops.
+
 
 ---
 
 ## 🚀 Getting Started (Как запустить локально)
 
-Чтобы запустить проект на своем компьютере:
+To run the project on your computer:
 
-1. **Клонируйте репозиторий:**
+## 1. Clone the repository:
    ```bash
    git clone https://github.com/BindasDanylo30/my-first-website.git
