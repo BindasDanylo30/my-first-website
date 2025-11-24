@@ -47,6 +47,7 @@
 }
 
 .hero__button {
+  margin-top: 15px;
   padding: 15px 30px;
   background-color: var(--primary);
   color: var(--text-secondary);

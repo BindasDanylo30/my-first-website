@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 1200px;
+  overflow: hidden;
 }
-
-  
-
 
 .about__title {
   font-size: 62px;
@@ -17,6 +16,10 @@
   font-size: 19.56px;
 
   font-weight: 400;
+}
+.about__image img {
+  object-fit: fill;
+  width: 100%;
 }
 .image__about {
   display: flex;
@@ -31,6 +34,6 @@
   width: 100%;
   /* изображение растягивается под блок */
   height: auto; /* сохраняет пропорции */
-  display: block; /* убирает лишние пробелы под img */
+  /* display: block; убирает лишние пробелы под img */
   object-fit: cover;
 }
