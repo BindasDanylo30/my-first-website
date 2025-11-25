@@ -16,6 +16,7 @@ You can see the project live here: **[https://bindasdanylo30.github.io/my-first-
 * **HTML5** (Semantic layout) — semantic layout.
 * **CSS3** (Flexbox, Grid, Animation) — layout and adaptation.
 * **JavaScript (ES6+)** — the entire logic of the application.
+* **Local Storage API**(Cart items are saved to Local Storage, so data persists after page refreshes.)
 
 **Architecture:**
 * **MVC Pattern** (Model-View-Controller) — separation of logic and display.
