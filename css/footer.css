@@ -21,8 +21,6 @@
   display: block;
   color: var(--primary);
 }
-.footer__logo span {
-}
 
 .footer__description {
   margin-bottom: 20px;
