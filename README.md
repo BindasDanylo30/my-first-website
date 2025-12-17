@@ -5,12 +5,12 @@ A fully functional Single Page Application (SPA) that simulates the operation of
 
 ---
 
-## 🔗 Live Demo (Деплой)
+## 🔗 Live Demo 
 You can see the project live here: **[https://bindasdanylo30.github.io/my-first-website/]**
 
 ---
 
-## 🛠 Tech Stack (Стек технологий)
+## 🛠 Tech Stack 
 
 **Core:**
 * **HTML5** (Semantic layout) — semantic layout.
@@ -27,14 +27,14 @@ You can see the project live here: **[https://bindasdanylo30.github.io/my-first-
 * **BEM Methodology** 
 ---
 
-## ✨ Features (Ключевой функционал)
+## ✨ Features 
 
 * **Responsive Design:** Fully adapted for mobile devices, tablets, and desktops.
 
 
 ---
 
-## 🚀 Getting Started (Как запустить локально)
+## 🚀 Getting Started 
 
 To run the project on your computer:
 
